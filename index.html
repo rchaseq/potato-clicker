@@ -145,6 +145,10 @@
         }
         },200)
     }
+        function resetProgress(){
+        Cookies.remove('lastplay', { path: '/', domain: 'rchaseq.github.io' })
+        Cookies.remove('clicker', { path: '/', domain: 'rchaseq.github.io' })
+  };
   </script>
 </head>
 <body onload="updatecount()">
@@ -160,5 +164,8 @@
 <br />
 <br />
 <footer>
+  <button onclick="resetProgress()">Reset progress</button>
+  <br>
+  <br>
   <small>by <a href="http://rchaseq.github.io" target="_blank">Rowan Quinn</a>, 2022</small>
 </footer>
