@@ -113,7 +113,7 @@
             lastsavedate = Math.round(lastsavedate/1000);
             if(lastsavedate / 60 >= 1){
                 clicker.potatoes += lastsavedate * pps / 5.3;
-                document.querySelector("#achvmnts").innerHTML += `<br>While you were gone:<br>You earned ${numberformat.format(lastsavedate*pps/5.3)} potatoes!`;
+                document.querySelector("#achvmnts").innerHTML += `<br><i>While you were gone:<br>You earned ${numberformat.format(lastsavedate*pps/5.3)} potatoes!</i><br>`;
             }
         };
         setInterval(() => {
